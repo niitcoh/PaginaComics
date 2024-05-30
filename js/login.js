@@ -5,7 +5,7 @@ loginForm.addEventListener('submit', (event) => {
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
-  fetch('http://localhost:3000/api/registros')
+  fetch('http://localhost:3001/api/registros')
     .then(response => response.json())
     .then(data => {
       const user = data.find(user => user.usuario === username && user.contraseña === password);

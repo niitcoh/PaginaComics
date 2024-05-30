@@ -19,7 +19,7 @@ registerForm.addEventListener('submit', (event) => {
 
   // Aquí puedes realizar la lógica de registro
   // Enviar los datos a la API
-  fetch('http://localhost:3000/api/registros', {
+  fetch('http://localhost:3001/api/registros', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
